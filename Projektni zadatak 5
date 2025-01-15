@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projektni zadatak.">
+    <meta name="keywords" content="HTML5, frontend, web dizajn">
+    <meta name="author" content="Bruno Švertfajer">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <title>News</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+		.banner {
+			width: 100%;
+			height: 400px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+		}
+
+
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 10px;
+            text-align: center;
+        }
+
+
+        nav {
+            background-color: #444;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .article {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+
+        .article img {
+            max-width: 150px;
+            height: auto;
+            margin-right: 20px;
+            border: 1px solid #ccc;
+            transition: transform 0.2s;
+        }
+
+        .article img:hover {
+            transform: scale(1.05);
+        }
+
+        .article h3 {
+            margin: 0 0 10px;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .article h3 a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .article h3 a:hover {
+            color: #4CAF50;
+        }
+
+        .article p {
+            margin: 0 0 5px;
+        }
+
+        .article a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        .article a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+
+
+        @media (max-width: 768px) {
+            .article {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .article img {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+     <header>
+        <img src="banner.jpg" alt="Banner" class="banner">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="Kontakt.html">Contact</a></li>
+            <li><a href="o_nama.html">About</a></li>
+            <li><a href="Galerija.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+	    <h1>NEWS</h1>
+        <section class="article">
+            <a href="Clanak_1.html"><img src="clanak1.jpg" alt="Slika članka 1"></a>
+            <div>
+                <h3><a href="Clanak_1.html">CNC Tehnologija – Budućnost Precizne Obrade</a></h3>
+                <p>CNC (Computer Numerical Control) strojevi revolucionirali su industriju strojne obrade omogućujući nevjerojatnu preciznost i automatizaciju. Otkrijte kako ova tehnologija smanjuje vrijeme proizvodnje, povećava kvalitetu i prilagođava se različitim potrebama industrije.</p>
+                <p><small>15.01.2025.</small></p>
+                <a href="Clanak_1.html">More...</a>
+            </div>
+        </section>
+        <section class="article">
+            <a href="#"><img src="clanak2.jpg" alt="Slika članka 2"></a>
+            <div>
+                <h3><a href="#">Materijali u Strojnoj Obradi – Što Odabrati?</a></h3>
+                <p>Prilikom odabira materijala za obradu ključno je razumjeti njihove karakteristike i otpornost. Saznajte više o aluminiju, čeliku, plastici i drugim popularnim materijalima, te kako odabrati pravi za vaš projekt.</p>
+                <p><small>15.01.2025</small></p>
+                <a href="#">More...</a>
+            </div>
+        </section>
+        <section class="article">
+            <a href="#"><img src="clanak3.jpg" alt="Slika članka 3"></a>
+            <div>
+                <h3><a href="#">Kako Održavati Alate za Obradu?</a></h3>
+                <p>Pravilno održavanje alata ključno je za dugotrajan rad i visokokvalitetne rezultate. Naučite savjete za čišćenje, oštrenje i skladištenje alata kako bi uvijek bili u vrhunskom stanju.</p>
+                <p><small>15.01.2025</small></p>
+                <a href="#">More...</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Bruno Švertfajer. Sva prava pridržana.</p>
+    </footer>
+</body>
+</html>
