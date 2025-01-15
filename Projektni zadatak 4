@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projektni zadatak.">
+    <meta name="keywords" content="HTML5, frontend, web dizajn">
+    <meta name="author" content="Bruno Švertfajer">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <title>Početna Stranica</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+		.banner {
+			width: 100%;
+			height: 400px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+		}
+
+
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        figure {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        figure img {
+            max-width: 60%;
+            height: auto;
+            border: 1px solid #ccc;
+        }
+
+        figure figcaption {
+            font-size: 14px;
+            color: #666;
+        }
+		 footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+		.social-icons {
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+        }
+
+        .social-icons a img {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+        }
+
+        .social-icons a:hover {
+            color: #aaa;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li a {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Strojna obrada</h1>
+        <img src="banner.jpg" alt="Banner" class="banner">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Početna stranica</a></li>
+            <li><a href="News.html">Novosti</a></li>
+            <li><a href="Kontakt.html">Kontakt</a></li>
+            <li><a href="o_nama.html">O nama</a></li>
+            <li><a href="Galerija.html">Galerija</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Vrhunske Usluge Strojne Obrade za Vaš Projekt</h1>
+        <h2>Preciznost, Kvaliteta i Inovacija u Svakom Koraku</h2>
+        <p>Dobrodošli na stranicu posvećenu vrhunskoj strojnoj obradi! Specijalizirani smo za pružanje visokokvalitetnih usluga u industriji obrade metala, plastike i drugih materijala. Naša stručnost i moderna tehnologija omogućuju nam da isporučimo rješenja prilagođena vašim potrebama, bilo da se radi o jednostavnim dijelovima ili složenim mehaničkim sustavima.</p>
+        <p>Naša oprema uključuje najmodernije CNC strojeve, konvencionalne alate te sustave za mjerenje i kontrolu kvalitete. Tim iskusnih stručnjaka posvećen je osiguravanju preciznosti u svakom koraku proizvodnog procesa. Ponosimo se time što ispunjavamo i najzahtjevnije tehničke specifikacije, uz poštivanje dogovorenih rokova.</p>
+        <p>Bez obzira na veličinu vašeg projekta, naš pristup je uvijek personaliziran. Suradnjom s nama, dobivate partnera koji razumije vaše poslovne ciljeve i pomaže vam u postizanju uspjeha. Kontaktirajte nas još danas i saznajte kako možemo pretvoriti vaše ideje u stvarnost – s kvalitetom na koju se možete osloniti.</p>
+        <figure>
+            <img src="pocetna.jpg" alt="Primjer korisničkog sučelja">
+            <figcaption>Slika: Primjer modernog korisničkog sučelja.</figcaption>
+        </figure>
+		 <div class="social-icons">
+            <a href="https://twitter.com" target="_blank">
+                <img src="twitter.svg" alt="Twitter">
+                Twitter
+            </a>
+            <a href="https://linkedin.com" target="_blank">
+                <img src="linkedin.svg" alt="LinkedIn">
+                LinkedIn
+            </a>
+        </div>
+    </main>
+	 <footer>
+        <p>&copy; 2025 Bruno Švertfajer. Sva prava pridržana.</p>
+    </footer>
+</body>
+</html>
