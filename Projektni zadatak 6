@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projektni zadatak.">
+    <meta name="keywords" content="HTML5, frontend, web dizajn">
+    <meta name="author" content="Bruno Švertfajer">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <title>CNC obrada</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+		.banner {
+			width: 100%;
+			height: 400px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+		}
+
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+        }
+
+        nav {
+            background-color: #444;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .gallery {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .gallery-item {
+            text-align: center;
+            max-width: 250px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            background-color: white;
+        }
+
+        .gallery-item img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+        }
+
+        .gallery-item p {
+            margin: 10px 0 0;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        article {
+            margin-top: 40px;
+        }
+
+        article h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        article p {
+            margin: 10px 0;
+        }
+
+        article small {
+            display: block;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        a.back-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        a.back-link:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+
+        @media (max-width: 768px) {
+            .gallery {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .gallery-item {
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+   <header>
+        <img src="banner.jpg" alt="Banner" class="banner">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="Kontakt.html">Contact</a></li>
+            <li><a href="o_nama.html">About</a></li>
+            <li><a href="Galerija.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="gallery">
+            <div class="gallery-item">
+                <img src="cnc.jpg" alt="cnc">
+                <p>CNC obrada</p>
+            </div>
+        </section>
+        <article>
+            <h1>CNC Tehnologija – Budućnost Precizne Obrade</h1>
+            <h2>Kako su CNC strojevi revolucionirali industriju strojne obrade, omogućujući veću preciznost i automatizaciju u proizvodnji.</h2>
+            <p>CNC (Computer Numerical Control) tehnologija predstavlja prekretnicu u industriji strojne obrade. Umjesto tradicionalnog ručnog upravljanja alatima, CNC strojevi koriste računalno kontrolirane sustave za precizno upravljanje alatima, omogućujući visoku točnost i ponovljivost u proizvodnji. Ova tehnologija nije samo unaprijedila preciznost, već je omogućila bržu i učinkovitiju proizvodnju u mnogim industrijama, od automobilske do zrakoplovne.</p>
+            <p>Jedna od najvećih prednosti CNC tehnologije je automatizacija. CNC strojevi mogu obavljati složene zadatke bez ljudskog nadzora, čime se značajno smanjuje mogućnost ljudske pogreške i povećava proizvodna učinkovitost. Automatizacija također smanjuje vrijeme potrebno za postavljanje i promjene u proizvodnom procesu, čime se ubrzava ukupna proizvodnja. Ova prednost omogućava proizvođačima da zadovolje zahtjevne rokove i optimiziraju proizvodne procese.</p>
+            <p>CNC strojevi omogućuju izuzetnu preciznost u obradi materijala, što je ključno za mnoge industrije koje zahtijevaju visoku točnost. Sposobnost da se stvori isti proizvod u istoj dimenziji, ponovljivo i dosljedno, poboljšava kvalitetu finalnih proizvoda. Preciznost CNC strojeva omogućava izradu dijelova koji odgovaraju najstrožim specifikacijama, što je od presudne važnosti u industrijama kao što su zrakoplovstvo, medicinska tehnologija i elektronika.</p>
+            <p>Jedna od najistaknutijih prednosti CNC tehnologije je njena fleksibilnost. CNC strojevi mogu se prilagoditi za izradu širokog spektra dijelova, od malih i jednostavnih komponenti do složenih i visokospecijaliziranih dijelova. Sposobnost promjene programa omogućava brzu prilagodbu proizvodnje na temelju specifičnih potreba tržišta ili klijenata. Ova prilagodljivost čini CNC tehnologiju idealnim rješenjem za mnoge industrije koje zahtijevaju prilagodbu proizvodnih linija.</p>
+            <p>CNC tehnologija ne prestaje evoluirati. S napredovanjem u području umjetničke inteligencije (AI) i robotike, budućnost CNC strojeva uključuje još veću automatizaciju, samostalno podešavanje i poboljšanje kvalitete. Očekuje se da će CNC strojevi postati još sofisticiraniji, omogućujući još veće uštede u vremenu, resursima i troškovima proizvodnje. Također, kako se tehnologija razvija, sve je vjerojatnije da će CNC strojevi postati ključni alat u industrijama koje se bave malim serijama proizvodnje i personaliziranim rješenjima.</p>
+            <small>Datum objave: 15.01.2025.</small>
+            <a href="News.html" class="back-link">Natrag</a>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2025 Bruno Švertfajer. Sva prava pridržana.</p>
+    </footer>
+</body>
+</html>
