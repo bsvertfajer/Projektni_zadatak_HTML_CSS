@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projektni zadatak.">
+    <meta name="keywords" content="HTML5, frontend, web dizajn">
+    <meta name="author" content="Bruno Švertfajer">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <title>Kontakt</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+		.banner {
+			width: 100%;
+			height: 400px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+		}
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+        }
+
+        nav {
+            background-color: #444;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .contact-form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form input, .contact-form select, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .contact-form label {
+            font-weight: bold;
+        }
+
+        .contact-form button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .contact-form button:hover {
+            background-color: #45a049;
+        }
+
+        iframe {
+            width: 100%;
+            height: 400px;
+            border: 0;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+
+        @media (max-width: 768px) {
+            main {
+                padding: 10px;
+            }
+
+            .contact-form input, .contact-form select, .contact-form textarea {
+                width: 100%;
+            }
+
+            iframe {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+     <header>
+        <h1>Strojna obrada Švertfajer</h1>
+        <img src="banner.jpg" alt="Banner" class="banner">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="News.html">News</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="o_nama.html">About</a></li>
+            <li><a href="Galerija.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="contact-form">
+            <h2>Kontaktirajte nas</h2>
+            <form action="#" method="POST" id="contactForm">
+                <label for="firstName">Ime:</label>
+                <input type="text" id="firstName" name="firstName" required>
+
+                <label for="lastName">Prezime:</label>
+                <input type="text" id="lastName" name="lastName" required>
+
+                <label for="email">E-mail adresa:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="country">Država:</label>
+                <select id="country" name="country" required>
+                    <option value="">Odaberite državu</option>
+                    <option value="HR">Hrvatska</option>
+                    <option value="RS">Srbija</option>
+                    <option value="BA">Bosna i Hercegovina</option>
+                    <option value="SI">Slovenija</option>
+                </select>
+
+                <label for="description">Opis:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+
+                <button type="submit">Pošaljite</button>
+            </form>
+            <h2>Naša lokacija</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.1363285112125!2d2.2922924156743524!3d48.85884407928723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671d5ab840c09%3A0x40c7f12526adfc40!2sEiffel+Tower!5e0!3m2!1sen!2sus!4v1573616284014!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Bruno Švertfajer. Sva prava pridržana.</p>
+    </footer>
+</body>
+</html>
