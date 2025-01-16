@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projektni zadatak.">
+    <meta name="keywords" content="HTML5, frontend, web dizajn">
+    <meta name="author" content="Bruno Švertfajer">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <title>Kontakt</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+		.banner {
+			width: 100%;
+			height: 400px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+		}
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+        }
+
+        nav {
+            background-color: #444;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .gallery figure {
+            margin: 0;
+            text-align: center;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        .gallery figcaption {
+            margin-top: 10px;
+            font-size: 1rem;
+            color: #666;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Strojna obrada Švertfajer</h1>
+        <img src="banner.jpg" alt="Banner" class="banner">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="News.html">News</a></li>
+            <li><a href="Kontakt.html">Contact</a></li>
+            <li><a href="o_nama.html">About</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+	<h1>Galerija</h1>
+        <section class="gallery">
+            <figure>
+                <a href="#" target="_blank">
+                    <img src="Galerija1.jpg" alt="Slika 1">
+                </a>
+                <figcaption>Slika 1</figcaption>
+            </figure>
+            <figure>
+                <a href="#" target="_blank">
+                    <img src="Galerija2.jpg" alt="Slika 2">
+                </a>
+                <figcaption>Slika 2</figcaption>
+            </figure>
+            <figure>
+                <a href="#" target="_blank">
+                    <img src="Galerija3.jpg" alt="Slika 3">
+                </a>
+                <figcaption>Slika 3</figcaption>
+            </figure>
+            <figure>
+                <a href="#" target="_blank">
+                    <img src="Galerija4.jpg" alt="Slika 4">
+                </a>
+                <figcaption>Slika 4</figcaption>
+            </figure>
+            <figure>
+                <a href="#" target="_blank">
+                    <img src="Galerija5.jpg" alt="Slika 5">
+                </a>
+                <figcaption>Slika 5</figcaption>
+            </figure>
+            <figure>
+                <a href="#" target="_blank">
+                    <img src="Galerija6.jpg" alt="Slika 6">
+                </a>
+                <figcaption>Slika 6</figcaption>
+            </figure>
+            <figure>
+                <a href="#" target="_blank">
+                    <img src="Galerija7.jpg" alt="Slika 7">
+                </a>
+                <figcaption>Slika 7</figcaption>
+            </figure>
+            <figure>
+                <a href="#" target="_blank">
+                    <img src="Galerija8.jpg" alt="Slika 8">
+                </a>
+                <figcaption>Slika 8</figcaption>
+            </figure>
+            <figure>
+                <a href="#" target="_blank">
+                    <img src="Galerija9.jpg" alt="Slika 9">
+                </a>
+                <figcaption>Slika 9</figcaption>
+            </figure>
+            <figure>
+                <a href="#" target="_blank">
+                    <img src="Galerija10.jpg" alt="Slika 10">
+                </a>
+                <figcaption>Slika 10</figcaption>
+            </figure>
+        </section>
+    </main>
+   <footer>
+        <p>&copy; 2025 Bruno Švertfajer. Sva prava pridržana.</p>
+    </footer>
+</body>
+</html>
