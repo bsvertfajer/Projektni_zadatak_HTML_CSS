@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projektni zadatak.">
+    <meta name="keywords" content="HTML5, frontend, web dizajn">
+    <meta name="author" content="Bruno Švertfajer">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <title>O nama</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+		.banner {
+			width: 100%;
+			height: 400px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+		}
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+        }
+
+        nav {
+            background-color: #444;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        article {
+            margin-top: 40px;
+        }
+
+        article h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        article p {
+            margin: 10px 0;
+            font-size: 1rem;
+            color: #666;
+        }
+
+        article video {
+            display: block;
+            margin: 20px 0;
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+
+        @media (max-width: 768px) {
+            main {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Strojna obrada Švertfajer</h1>
+		<img src="banner.jpg" alt="Banner" class="banner">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="News.html">News</a></li>
+            <li><a href="Kontakt.html">Contact</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="Galerija.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+	<h1>O nama</h1>
+        <article>
+            <h2>Naša Misija</h2>
+            <p>Naša vizija je postati vodeći pružatelj usluga strojne obrade, poznat po inovacijama, preciznosti i kvaliteti. Težimo postavljanju novih standarda u industriji, kroz primjenu najmodernijih tehnologija i stručnog znanja. Naš cilj je biti partner od povjerenja za sve naše klijente, pomažući im u pretvaranju ideja u stvarnost i stvaranju proizvoda koji unapređuju svijet.</p>
+
+            <h2>Naša Vizija</h2>
+            <p>Naša misija je pružiti visokokvalitetne, prilagođene i pravovremene usluge strojne obrade, s naglaskom na zadovoljstvo klijenata i dugoročnu suradnju. Kroz kontinuirano ulaganje u tehnologiju, obuku našeg tima i održavanje najviših standarda kvalitete, predano radimo na tome da premašimo očekivanja i postanemo sinonim za izvrsnost u industriji.</p>
+
+            <h2>Video o Nama</h2>
+            <p>Ovdje možete pogledati video koji detaljno prikazuje naš rad i misiju:</p>
+
+            <video controls>
+                <source src="o_nama.mp4" type="video/mp4">
+            </video>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2025 Bruno Švertfajer. Sva prava pridržana.</p>
+    </footer>
+</body>
+</html>
